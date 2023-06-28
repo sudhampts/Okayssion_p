@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.img1 {
+            margin: 20px 0px 0px 18px;
+            width: fit-content;
+        }
+
+        .bi {
+            margin: 30px 30px 0px 0px;
+        }
+
+        /* .main {
+            background-image: url('./images/images/popup\ bg.png');
+            height: 625px;
+            width: 90vw;
+            border: none;
+        } */
+
+        /* late */
+        .main {
+            background-image: url(./images/images/popup\ bg.png);
+            height: 517px;
+            width: 61vw;
+            border: none;
+            position: relative;
+            top: 9vh;
+        }
+
+        #main {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* .main .hiring {
+            font-family: inter;
+            font-weight: 900;
+            font-size: 128px;
+            color: #3e3121;
+            padding-top: 0px;
+            padding-left: 15px;
+            margin-bottom: auto;
+        } */
+        .main .hiring {
+            font-family: inter;
+            font-weight: 900;
+            font-size: 72px;
+            color: #3e3121;
+            padding-top: 0px;
+            padding-left: 15px;
+        }
+
+        .sun {
+            line-height: 30px;
+        }
+
+        .main .develop {
+            font-family: inter;
+            font-weight: 700;
+            font-size: 24px;
+            color: #3e3121;
+            padding-left: 15px;
+            margin: 10px 0px;
+
+        }
+
+        .main .man {
+            font-family: inter;
+            font-weight: 400;
+            font-size: 15px;
+            color: #3e3121;
+            padding-left: 40px;
+            margin-top: 10px;
+
+        }
+
+        .main .man1 {
+            font-family: inter;
+            font-weight: 400;
+            font-size: 15px;
+            color: #3e3121;
+            padding-left: 40px;
+
+        }
+
+        .main .resume {
+            font-family: inter;
+            font-weight: 600;
+            font-size: 15px;
+            color: #3e3121;
+            margin: 0px 2px;
+            padding-top: 15px;
+            padding-left: 17px;
+
+        }
+
+        .main .hr {
+            background-color: #ffed00;
+            border-radius: 8px;
+            font-family: inter;
+            font-weight: 600;
+            font-size: 19px;
+            color: #3e3121;
+            width: 293px;
+            height: 35px;
+            padding-top: 3px;
+            margin: 2px 10px;
+            padding-left: 10px;
+            margin-left: 17px;
+
+        }
+
+        .main .phone {
+            background-color: #ffed00;
+            border-radius: 8px;
+            font-family: inter;
+            font-weight: 600;
+            font-size: 16px;
+            color: #3e3121;
+            width: 145px;
+            height: 35px;
+            margin: 2px 10px;
+            padding-left: 5px;
+            padding-top: 6ssspx;
+            margin-left: 17px;
+
+        }
+
+        .main .hr {
+            background-color: #ffed00;
+            border-radius: 8px;
+            font-family: inter;
+            font-weight: 600;
+            font-size: 19px;
+            color: #3e3121;
+            width: 293px;
+            height: 35px;
+            padding-top: 4px;
+            margin: 2px 10px;
+            padding-left: 10px;
+            margin-left: 17px;
+
+        }
+
+        .main .phone {
+            background-color: #ffed00;
+            border-radius: 8px;
+            font-family: inter;
+            font-weight: 600;
+            font-size: 16px;
+            color: #3e3121;
+            width: 145px;
+            height: 35px;
+            margin: 2px 10px;
+            padding-left: 0px;
+            padding-top: 5px;
+            margin-left: 17px;
+
+        }
+
+        .main .here {
+            font-family: inter;
+            font-weight: 400;
+            font-size: 15px;
+            color: #3e3121;
+            padding-left: 25px;
+            padding-top: 15px;
+
+        }
+
+        .main .line {
+            width: 100px;
+            padding-left: 10px;
+            margin-top: -10px;
+            margin-left: 12px;
+        }
+
+        /* .img3 {
+            margin-right: 115px;
+            height: 414px;
+            width: 326px;
+        } */
+
+        .img3 {
+            margin-right: 18px;
+            height: 370px;
+            width: 295px;
+        }
+
+        .img2 {
+            padding-right: 30px;
+            padding-bottom: 15px;
+        }
+
+        /* popup */
+        *,
+        *:befor,
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .popup {
+            position: absolute;
+            /* top: 50%; */
+            /* left: 50%; */
+            /* width: 750px; */
+            /* transform: translate(-50%, -50%); */
+            /* padding: 30px 40px; */
+            /* background-color: gray; */
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+            z-index: 9999;
+            border-radius: 8px;
+            font-family: 'poppins';
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <div class="card main ps-4">
+            <div class="head">
+                <img src="./images/images/Hirespot logo.png" class=" img1 float-start" width="80px" height="40px">
+                <img src="./images/images/Vector cross.png" class="bi float-end" id="close">
+            </div>
+            <label class="hiring">WE ARE HIRING !</label>
+
+            <div class=" row pp ">
+                <div class="col sun">
+                    <label class="develop">Business Development <br> Executive</label>
+                    <div class="man d-flex">
+                        <img src="./images/images/tick mark.png" class="img2 ">
+                        <label class="year">1-4 years of experience</label>
+                    </div>
+                    <div class="man1 d-flex">
+                        <img src="./images/images/tick mark.png" class=" img2 ">
+                        <label class="full">Full time</label>
+                    </div>
+                    <label class="resume">Submit you resume:</label><br>
+                    <label class="hr">soumya.contact.hr@gmail.com</label><br>
+                    <label class="phone">+91 78970 87003</label><br>
+                    <label class="here"><a href="">Apply here </a></label>
+                    <div class="line">
+                        <hr>
+                    </div>
+                </div>
+
+
+                <div class="col moon">
+                    <img src="./images/images/popup image.png" class=" img3 float-end">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("load", function () {
+            var a = document.getElementById("a");
+            setTimeout(function () {
+                var content = document.querySelector('main');
+                content.style.opacity = 1;
+                a.style.display = "none";
+                document.body.style.overflow = "auto";
+            }, 4000);
+            setTimeout(
+                function open(event) {
+                    document.querySelector('.popup').style.display = "block";
+                }, 6000
+            )
+        });
+        document.querySelector('#close').addEventListener('click', function () {
+            document.querySelector('.popup').style.display = "none";
+            document.querySelector('.blur').style.filter = "none";
+        })
+        // })
+    </script>
+</body>
+</html>
